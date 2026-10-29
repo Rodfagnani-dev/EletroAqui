@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cadastro de eletricista — EletroAqui</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="eletricista">
+    <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+    <header id="topo"></header>
+    <main id="conteudo">
+      <form id="form-eletricista" class="form" novalidate>
+        <h1 id="tit">Anuncie seus serviços</h1>
+        <div class="dois">
+          <label
+            >Nome completo<input
+              name="nome"
+              autocomplete="name"
+              required /></label
+          ><label
+            >E-mail<input
+              type="email"
+              name="email"
+              autocomplete="email"
+              required
+          /></label>
+          <label
+            >Telefone ou WhatsApp<input
+              type="tel"
+              name="tel"
+              placeholder="(41) 99999-9999"
+              required
+          /></label>
+          <p class="aviso media-info">
+            Não é necessário informar um preço mínimo. A média dos valores será
+            calculada automaticamente com base nos serviços concluídos e nos
+            valores finais registrados.
+          </p>
+          <label
+            >Senha (mínimo 8 caracteres)<input
+              type="password"
+              name="senha"
+              autocomplete="new-password" /></label
+          ><label
+            >Confirmar senha<input
+              type="password"
+              name="senha2"
+              autocomplete="new-password"
+          /></label>
+        </div>
+        <label
+          >Foto de perfil (opcional)<input
+            type="file"
+            name="foto"
+            accept="image/*"
+        /></label>
+        <label
+          >Descrição profissional e experiência<textarea
+            name="desc"
+            rows="4"
+            required
+          ></textarea>
+        </label>
+        <fieldset>
+          <legend>Especialidades (escolha uma ou mais)</legend>
+          <div class="checks" id="esps"></div>
+        </fieldset>
+        <fieldset>
+          <legend>Regiões atendidas</legend>
+          <div class="checks" id="regs"></div>
+        </fieldset>
+        <fieldset>
+          <legend>Bairros específicos atendidos</legend>
+          <div id="bairros"></div>
+        </fieldset>
+        <label
+          >Disponibilidade de atendimento<input
+            name="disp"
+            placeholder="Ex.: seg a sáb, 8h às 18h; plantão 24h"
+            required
+        /></label>
+        <fieldset>
+          <legend>Qualificações declaradas</legend>
+          <div class="dois">
+            <label
+              >Possui formação ou curso na área?<select name="formacao">
+                <option>Não</option>
+                <option>Sim</option>
+              </select></label
+            >
+            <label
+              >Possui NR-10?<select name="nr10">
+                <option>Não</option>
+                <option>Sim</option>
+                <option>Em andamento</option>
+              </select></label
+            >
+          </div>
+          <label
+            >Certificações e outras qualificações (opcional)<input
+              name="cert"
+              placeholder="Ex.: curso técnico, NR-35"
+          /></label>
+          <p class="aviso">
+            Estas informações são declaradas por você e
+            <strong>não são verificadas</strong> pela plataforma. Elas
+            aparecerão assim no seu perfil.
+          </p>
+        </fieldset>
+        <label id="lt" style="font-weight: 400"
+          ><input type="checkbox" name="termos" style="width: auto" /> Li e
+          aceito os
+          <button type="button" class="link" data-termo="termos">
+            termos de uso
+          </button>
+          e a
+          <button type="button" class="link" data-termo="privacidade">
+            política de privacidade</button
+          >.</label
+        >
+        <button class="btn" id="salvar">Criar perfil</button>
+      </form>
+    </main>
+    <footer id="rodape"></footer>
+    <script src="js/script.js"></script>
+    <script src="js/eletricistas.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>

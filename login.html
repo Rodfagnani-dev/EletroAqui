@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Entrar — EletroAqui</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="login">
+    <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+    <header id="topo"></header>
+    <main id="conteudo">
+      <form id="form-login" class="form estreito" novalidate>
+        <h1>Entrar</h1>
+        <p class="mut">
+          Clientes e eletricistas entram por aqui. O sistema identifica o tipo
+          da conta.
+        </p>
+        <label
+          >E-mail<input
+            type="email"
+            name="email"
+            autocomplete="email"
+            required /></label
+        ><label
+          >Senha<input
+            type="password"
+            name="senha"
+            autocomplete="current-password"
+            required
+        /></label>
+        <button class="btn">Entrar</button>
+        <p>
+          Novo por aqui?
+          <a href="cadastro-cliente.html">Cadastre-se como cliente</a> ou
+          <a href="cadastro-eletricista.html">anuncie como eletricista</a>.
+        </p>
+        <p class="aviso">
+          Demonstração: contas e senhas ficam apenas neste navegador
+          (localStorage), não é autenticação segura.
+        </p>
+      </form>
+    </main>
+    <footer id="rodape"></footer>
+    <script src="js/script.js"></script>
+    <script src="js/eletricistas.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>

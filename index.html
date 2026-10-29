@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Eletricistas em Curitiba — EletroAqui</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="home">
+    <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+    <header id="topo"></header>
+    <main id="conteudo">
+      <section class="hero">
+        <div class="wrap">
+          <h1>Encontre eletricistas de confiança em Curitiba</h1>
+          <p>
+            Compare perfis, veja avaliações de clientes e peça orçamento direto
+            ao profissional.
+          </p>
+          <form
+            id="filtros"
+            class="filtros"
+            role="search"
+            aria-label="Buscar eletricistas"
+            onsubmit="return false;"
+          >
+            <label class="q"
+              >Nome ou tipo de serviço<input
+                type="search"
+                id="q"
+                placeholder="Ex.: chuveiro, quadro de luz, Marcos"
+            /></label>
+            <label>Região<select id="regiao"></select></label
+            ><label>Bairro<select id="bairro"></select></label>
+            <label>Especialidade<select id="esp"></select></label>
+            <label
+              >Avaliação mínima<select id="nota">
+                <option value="0">Qualquer</option>
+                <option value="4">4 estrelas ou mais</option>
+                <option value="4.5">4,5 estrelas ou mais</option>
+              </select></label
+            >
+            <label
+              >Média dos valores cobrados<select id="media">
+                <option value="0">Qualquer</option>
+                <option value="80">Média até R$ 80</option>
+                <option value="120">Média até R$ 120</option>
+                <option value="180">Média até R$ 180</option>
+              </select></label
+            >
+            <label
+              >Ordenar por<select id="ordem">
+                <option value="rel">Relevância</option>
+                <option value="nota">Melhor avaliação</option>
+                <option value="media">Menor média</option>
+              </select></label
+            >
+            <button
+              type="button"
+              class="btn ghost"
+              id="limpar"
+              style="color: var(--azul)"
+            >
+              Limpar filtros
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="wrap" id="resultados">
+        <h2 id="contagem" aria-live="polite"></h2>
+        <div id="lista" class="grid"></div>
+      </section>
+      <section class="wrap">
+        <h2>Serviços mais procurados</h2>
+        <div id="categorias" class="cats"></div>
+      </section>
+      <section class="faixa">
+        <div class="wrap">
+          <h2>Como funciona</h2>
+          <ol class="passos">
+            <li>
+              <h3>Busque</h3>
+              Filtre por bairro, serviço, nota e preço.
+            </li>
+            <li>
+              <h3>Peça orçamento</h3>
+              Descreva o problema e escolha data e período.
+            </li>
+            <li>
+              <h3>Acompanhe e avalie</h3>
+              Veja o status do pedido e avalie o serviço concluído.
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="wrap cta">
+        <h2>É eletricista?</h2>
+        <p>
+          Crie seu perfil gratuito e receba pedidos de orçamento na sua região.
+        </p>
+        <a class="btn" href="cadastro-eletricista.html"
+          >Anunciar meus serviços</a
+        >
+      </section>
+    </main>
+    <footer id="rodape"></footer>
+    <script src="js/script.js"></script>
+    <script src="js/eletricistas.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>

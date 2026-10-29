@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cadastro de cliente — EletroAqui</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="cliente">
+    <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+    <header id="topo"></header>
+    <main id="conteudo">
+      <form id="form-cliente" class="form" novalidate>
+        <h1>Cadastro de cliente</h1>
+        <div class="dois">
+          <label
+            >Nome completo<input
+              name="nome"
+              autocomplete="name"
+              required /></label
+          ><label
+            >E-mail<input
+              type="email"
+              name="email"
+              autocomplete="email"
+              required
+          /></label>
+          <label
+            >Telefone<input
+              type="tel"
+              name="tel"
+              placeholder="(41) 99999-9999"
+              autocomplete="tel"
+              required /></label
+          ><label
+            >Bairro de residência<select
+              name="bairro"
+              id="bairro"
+              required
+            ></select
+          ></label>
+          <label
+            >Senha (mínimo 8 caracteres)<input
+              type="password"
+              name="senha"
+              autocomplete="new-password"
+              required /></label
+          ><label
+            >Confirmar senha<input
+              type="password"
+              name="senha2"
+              autocomplete="new-password"
+              required
+          /></label>
+        </div>
+        <label style="font-weight: 400"
+          ><input type="checkbox" name="termos" style="width: auto" /> Li e
+          aceito os
+          <button type="button" class="link" data-termo="termos">
+            termos de uso
+          </button>
+          e a
+          <button type="button" class="link" data-termo="privacidade">
+            política de privacidade</button
+          >.</label
+        >
+        <button class="btn">Criar conta</button>
+        <p>Já tem conta? <a href="login.html">Entrar</a></p>
+      </form>
+    </main>
+    <footer id="rodape"></footer>
+    <script src="js/script.js"></script>
+    <script src="js/eletricistas.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>
